@@ -16,7 +16,7 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES']='1'
 
 parser=argparse.ArgumentParser()
-parser.add_argument('--n_epoches_1',type=int,default= 0)
+parser.add_argument('--n_epoches_1',type=int,default= 50)
 parser.add_argument('--n_epoches_2',type=int,default= 0)
 parser.add_argument('--n_epoches_3',type=int,default=200)
 parser.add_argument('--n_target_samples',type=int,default=7)
