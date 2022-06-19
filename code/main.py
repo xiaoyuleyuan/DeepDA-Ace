@@ -17,7 +17,7 @@ os.environ['CUDA_VISIBLE_DEVICES']='1'
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--n_epoches_1',type=int,default= 50)
-parser.add_argument('--n_epoches_2',type=int,default= 0)
+parser.add_argument('--n_epoches_2',type=int,default= 100)
 parser.add_argument('--n_epoches_3',type=int,default=200)
 parser.add_argument('--n_target_samples',type=int,default=7)
 parser.add_argument('--batch_size',type=int,default= 256)
@@ -34,7 +34,7 @@ if use_cuda:
 #--------------pretrain g and h for step 1---------------------------------
 species_all = ['Homo_sapiens','Rattus_norvegicus','Schistosoma_japonicum','Saccharomyces_cerevisiae','Mus_musculus','Escherichia_coli','Bacillus_velezensis','Plasmodium_falciparum','Oryza_sativa','Arabidopsis_thaliana']
 specie1 = species_all[0]
-specie2 = species_all[9]
+specie2 = species_all[1]
 
 result_path = '/harddisk/hdd_d/liuyu/PTM/ace/PTM_GAN/results/'
 if not os.path.exists(result_path):
